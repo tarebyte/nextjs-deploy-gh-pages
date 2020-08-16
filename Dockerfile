@@ -24,7 +24,6 @@ RUN apk add --update --no-cache \
       g++ \
       gcc \
       git \
-      less \
       libstdc++ \
       libffi-dev \
       libc-dev \
@@ -37,9 +36,6 @@ RUN apk add --update --no-cache \
       nodejs \
       openssl \
       pkgconfig \
-      postgresql-dev \
-      python \
-      tzdata \
-      yarn
+      tzdata
 
 ENTRYPOINT ["/entrypoint.sh"]

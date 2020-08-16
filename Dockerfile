@@ -16,6 +16,9 @@ LABEL "repository"="http://github.com/tarebyte/jekyll-deploy-gh-pages/tree/maste
 
 ADD entrypoint.sh /entrypoint.sh
 
-RUN apk add --update --no-cache nodejs
+RUN apk add --update --no-cache \
+      libgcrypt-dev \
+      openssl \
+      nodejs
 
 ENTRYPOINT ["/entrypoint.sh"]

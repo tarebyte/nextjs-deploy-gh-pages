@@ -33,7 +33,7 @@ RUN apk add --update --no-cache \
       libgcrypt-dev \
       make \
       netcat-openbsd \
-      nodejs \
+      npm \
       openssl \
       pkgconfig \
       tzdata

@@ -1,4 +1,4 @@
-FROM ruby:2.7.1:alpine
+FROM ruby:2.7.1-alpine
 ENV BUNDLER_VERSION=2.1.4
 
 # Set default locale for the environment

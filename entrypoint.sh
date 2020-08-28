@@ -10,6 +10,8 @@ npx next build
 npx next export
 
 echo '👍 THE SITE IS BUILT—PUSHING IT BACK TO GITHUB-PAGES'
+touch out/.nojekyll
+cp CNAME out/
 cd out
 
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" && \

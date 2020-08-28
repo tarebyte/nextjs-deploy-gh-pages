@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Builds & deploys Next.js apps to gh-page
 LABEL "com.github.actions.icon"="globe"
 LABEL "com.github.actions.color"="green"
 
-LABEL "repository"="http://github.com/tarebyte/nextjs-deploy-gh-pages/tree/master"
+LABEL "repository"="http://github.com/tarebyte/nextjs-deploy-gh-pages"
 
 ADD entrypoint.sh /entrypoint.sh
 

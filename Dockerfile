@@ -9,4 +9,6 @@ LABEL "repository"="http://github.com/tarebyte/nextjs-deploy-gh-pages"
 
 ADD entrypoint.sh /entrypoint.sh
 
+RUN apk add --update --no-cache git
+
 ENTRYPOINT ["/entrypoint.sh"]

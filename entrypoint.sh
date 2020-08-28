@@ -6,6 +6,7 @@ echo '👍 INSTALLING NODE DEPENDENCIES'
 npm install
 
 echo '👍 BUILDING THE SITE'
+npx next build
 npx next export
 
 echo '👍 THE SITE IS BUILT—PUSHING IT BACK TO GITHUB-PAGES'

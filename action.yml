@@ -1,6 +1,6 @@
 
-name: jekyll-deploy-gh-pages
-description: 'Deploying your Jekyll repo back to the gh-pages branch of the same repository'
+name: nextjs-deploy-gh-pages
+description: 'Deploying your Next.js repo back to the gh-pages branch of the same repository'
 branding:
   icon: 'upload-cloud'
   color: 'blue'

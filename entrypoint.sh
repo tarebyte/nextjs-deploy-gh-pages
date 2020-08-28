@@ -2,18 +2,14 @@
 
 set -e
 
-echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
-bundle check || bundle install
-bundle list | grep "jekyll ("
-
-echo '👍 INSTALL NODE DEPENDENCIES'
+echo '👍 INSTALLING NODE DEPENDENCIES'
 npm install
 
-echo '👍 BUNDLE INSTALLED—BUILDING THE SITE'
-bundle exec jekyll build
+echo '👍 BUILDING THE SITE'
+npx next export
 
 echo '👍 THE SITE IS BUILT—PUSHING IT BACK TO GITHUB-PAGES'
-cd _site
+cd out
 
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" && \
 remote_branch="gh-pages"
